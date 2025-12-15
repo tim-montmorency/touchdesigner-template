@@ -1,6 +1,8 @@
 # touchdesigner-template
 
-Template de projet TouchDesigner pour les étudiants en TIM à Montmorency. Tout nouveau projet TouchDesigner devrait être parti à partir de ce template.
+![](./template_toe.png)
+
+Template de projet TouchDesigner pour les étudiants en TIM à Montmorency. Tout nouveau projet TouchDesigner devrait partir de ce template.
 
 Ce dépôt fourni :
 - Un `.gitignore` spécifique à TouchDesigner qui permet d'ignorer les fichiers de backup (git s'occupe des sauvegardes et le système de TouchDesigner devient redondant).
@@ -12,9 +14,13 @@ Ce dépôt fourni :
 
 ## `DAT Execute` nommé `main` 
 
-Le `DAT Execute` nommé `main` devrait contenir le code Python à exécuter à chaque *frame*. Idéalement, tout le code devrait se trouver ici plutôt qu'être éparpillé. Il faut surtout éviter d'utiliser des `CHOP Execute` qui dédoublent l'exécution du code. Les fonctions pertinentes du `DAT Execute` nommé `main` sont :
+Le `DAT Execute` nommé `main` devrait contenir le code Python à exécuter à chaque *frame*. Idéalement, tout le code Python devrait se trouver ici plutôt qu'être éparpillé. Il faut surtout éviter d'utiliser des `CHOP Execute` qui dédoublent l'exécution du code. Les fonctions pertinentes du `DAT Execute` nommé `main` sont :
 - `onStart()`, le code exécuté à l'ouverture du document.
 - `onFrameStart()`, le code exécuté à chaque *frame* (environ 60 fois par seconde). 
+
+Pour accéder aux variables globales de l'exemple, dans du code Python ailleurs ou dans l'inspecteur de paramètres, écrire :
+- `op('globals').par.Resx`
+- `op('globals').par.Resy`
 
 ## `COMP Base` nommé `globals`
 
