@@ -1,4 +1,4 @@
-# touchdesigner-template
+# Template TouchDesigner pour TIM Montmorency
 
 ![](./template_toe.png)
 
