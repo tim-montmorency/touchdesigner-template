@@ -11,6 +11,7 @@ Ce dépôt fourni :
     - Un `COMP Base` nommé `globals` pour les variables globales
     - Un `TOP Fit` nommé `fit` qui montre comment préserver le ratio d'une image.
 - Un fichier vidéo d'exemple.
+- Les paramètres du mode de performance/présentation (activé avec la touche `F1`) ont été modifiés pour jouer en plein écran et cacher la souris.
 
 ## `DAT Execute` nommé `main` 
 
